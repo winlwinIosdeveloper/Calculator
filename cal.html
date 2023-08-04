@@ -6,63 +6,40 @@
   </head>
 
   <body>
-    <script src="cal.js"></script>
-
     <div class="calculator">
-      <div class="container">
-        <div class="display">
-          <input type="text" id="textbox" value="" readonly />
-        </div>
+      <div class="display">
+        <input type="text" value="122" readonly />
+      </div>
 
-        <div class="numpad">
-          <div class="btn-row">
-            <button class="number" id="btn7" onclick="getNumber(this)">
-              7
-            </button>
-            <button class="number" id="btn8" onclick="getNumber(this)">
-              8
-            </button>
-            <button class="number" id="btn9" onclick="getNumber(this)">
-              9
-            </button>
-            <button class="operator">+</button>
-          </div>
+      <div class="numpad">
+        <button class="number btn">7</button>
+        <button class="number btn">8</button>
+        <button class="number btn">9</button>
+        <button class="operator btn" id="+">+</button>
 
-          <div class="btn-row">
-            <button class="number" id="btn4" onclick="getNumber(this)">
-              4
-            </button>
-            <button class="number" id="btn5" onclick="getNumber(this)">
-              5
-            </button>
-            <button class="number" id="btn6" onclick="getNumber(this)">
-              6
-            </button>
-            <button class="operator">-</button>
-          </div>
+        <button class="number btn">4</button>
+        <button class="number btn">5</button>
+        <button class="number btn">6</button>
+        <button class="operator btn" id="-">-</button>
 
-          <div class="btn-row">
-            <button class="number" id="btn1" onclick="getNumber(this)">
-              1
-            </button>
-            <button class="number" id="btn2" onclick="getNumber(this)">
-              2
-            </button>
-            <button class="number" id="btn3" onclick="getNumber(this)">
-              3
-            </button>
-            <button class="operator">x</button>
-          </div>
+        <button class="number btn">1</button>
+        <button class="number btn">2</button>
+        <button class="number btn">3</button>
+        <button class="operator btn" id="x">*</button>
 
-          <div class="btn-row">
-            <button class="number" id="btn0" onclick="getNumber(this)">
-              0
-            </button>
-            <button class="operator">.</button>
-            <button class="operator">/</button>
-            <button class="operator" style="background-color: red">=</button>
-          </div>
-        </div>
+        <button class="operator btn" id=".">.</button>
+        <button class="number btn">0</button>
+        <button class="operator btn" id="/">/</button>
+        <button
+          class="operator btn"
+          id="="
+          style="background-color: var(--color)">
+          =
+        </button>
+
+        <button class="AC-btn" style="background-color: var(--color)">
+          AC
+        </button>
       </div>
     </div>
   </body>
